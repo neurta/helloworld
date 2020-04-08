@@ -50,8 +50,8 @@ sp_sentence = u"¿Puedo tomar prestado este libro?"
 print(preprocess_sentence(en_sentence))
 print(preprocess_sentence(sp_sentence).encode('utf-8'))
 
-<start> may i borrow this book ? <end>
-b'<start> \xc2\xbf puedo tomar prestado este libro ? <end>'
+#<start> may i borrow this book ? <end>
+#b'<start> \xc2\xbf puedo tomar prestado este libro ? <end>'
 
 # 1. 去除重音符号
 # 2. 清理句子
@@ -68,8 +68,8 @@ en, sp = create_dataset(path_to_file, None)
 print(en[-1])
 print(sp[-1])
 
-<start> if you want to sound like a native speaker , you must be willing to practice saying the same sentence over and over in the same way that banjo players practice the same phrase over and over until they can play it correctly and at the desired tempo . <end>
-<start> si quieres sonar como un hablante nativo , debes estar dispuesto a practicar diciendo la misma frase una y otra vez de la misma manera en que un musico de banjo practica el mismo fraseo una y otra vez hasta que lo puedan tocar correctamente y en el tiempo esperado . <end>
+#<start> if you want to sound like a native speaker , you must be willing to practice saying the same sentence over and over in the same way that banjo players practice the same phrase over and over until they can play it correctly and at the desired tempo . <end>
+#<start> si quieres sonar como un hablante nativo , debes estar dispuesto a practicar diciendo la misma frase una y otra vez de la misma manera en que un musico de banjo practica el mismo fraseo una y otra vez hasta que lo puedan tocar correctamente y en el tiempo esperado . <end>
 
 
 def max_length(tensor):
